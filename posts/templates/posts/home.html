@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>BlueTune</title>
+    <title>Music Blue</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./css/Style.css">
 </head>
 
 <body>
@@ -19,14 +19,14 @@
         </a>
 
         <!-- Search -->
-        <div class="search-box">
+        <div class="search-box" onclick="openSearchPage()">
     <span class="search-icon">⌕</span>
 
     <input
         type="text"
         id="searchInput"
         placeholder="What do you want to play?"
-        autocomplete="off"
+        readonly
     >
 </div>
         <!-- Right side -->
@@ -59,7 +59,7 @@
                 <p>Home</p>
             </a>
 
-            <a href="#" class="menu-item">
+            <a href="./search.html" class="menu-item">
                 <span>⌕</span>
                 <p>Search</p>
             </a>
@@ -95,6 +95,51 @@
         
     <!-- Quick Picks -->
     <section class="music-section">
+        <section class="featured-section">
+
+    <div class="featured-content">
+
+        <span class="featured-label">FEATURED</span>
+
+        <h1>BIRDS OF A FEATHER</h1>
+
+        <h3>billie eilish</h3>
+
+        <p>
+            Listen to one of the most popular tracks
+            and discover more music from billie eilish.
+        </p>
+
+        <div class="featured-buttons">
+
+            <button
+                class="featured-play"
+                onclick="playSong(
+                     'BIRDS OF A FEATHER.mp3',
+                'BIRDS OF A FEATHER',
+                'billie eilish',
+                './img/billie eilish album.jpg'
+            
+                )">
+                ▶ Play
+            </button>
+
+            <button class="featured-more">
+                More info
+            </button>
+
+        </div>
+
+    </div>
+
+    <div class="featured-cover">
+        <img
+            src="./img/billie eilish album.jpg"
+            alt="This That"
+        >
+    </div>
+
+</section>
 <section class="categories-section">
 
     <div class="section-header">
@@ -388,7 +433,7 @@
 
 <audio id="audioPlayer"></audio>
 
-    <script src="./Script.js"></script>
+    <script src="./js/Script.js"></script>
 
 </body>
 </html>
