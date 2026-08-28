@@ -1,0 +1,168 @@
+.search-page {
+    padding: 40px 45px 120px;
+}
+
+
+/* SEARCH BOX */
+
+.search-page-box {
+    width: 500px;
+    height: 48px;
+
+    background: #151a21;
+    border: 1px solid #26313d;
+    border-radius: 28px;
+
+    display: flex;
+    align-items: center;
+
+    padding: 0 16px;
+
+    transition: 0.3s ease;
+
+
+    
+}
+
+.search-page-box:focus-within {
+    border-color: var(--blue);
+    box-shadow: 0 0 20px rgba(25, 167, 255, 0.12);
+}
+
+.search-page-box span {
+    color: #9aa7b5;
+    font-size: 26px;
+}
+
+.search-page-box input {
+    width: 100%;
+    margin-left: 10px;
+
+    border: none;
+    outline: none;
+
+    background: transparent;
+    color: white;
+
+    font-size: 15px;
+}
+
+
+/* RESULTS */
+
+.search-results-grid {
+    display: grid;
+
+    grid-template-columns: repeat(auto-fill, minmax(150px, 150px));
+
+    gap: 24px 28px;
+
+    align-items: start;
+}
+
+
+/* RESULT CARD */
+
+.search-result-card {
+    width: 150px;
+
+    background: #0d141c;
+
+    border: 1px solid #192632;
+
+    border-radius: 12px;
+
+    padding: 10px;
+
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.search-result-card:hover {
+    transform: translateY(-4px);
+    background: #121d28;
+    border-color: rgba(25, 167, 255, 0.35);
+}
+
+
+/* IMAGE */
+
+.search-result-card img {
+    width: 130px;
+    height: 130px;
+
+    display: block;
+
+    object-fit: cover;
+
+    border-radius: 9px;
+
+    margin-bottom: 10px;
+}
+
+
+/* TEXT */
+
+.search-result-card h3 {
+    margin: 0 0 5px;
+
+    font-size: 13px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.search-result-card p {
+    margin: 0;
+
+    color: var(--muted);
+
+    font-size: 11px;
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+
+/* EMPTY */
+
+.no-results {
+
+        text-align: center;
+    padding: 180px 20px 90px;
+    color: var(--muted);
+}
+
+.no-results div {
+    color: var(--blue);
+    font-size: 45px;
+
+    margin-bottom: 12px;
+}
+
+.no-results h2 {
+    color: white;
+    margin: 0 0 8px;
+}
+
+.no-results p {
+    margin: 0;
+}
+
+.search-main {
+    margin-left: 255px;
+    min-height: calc(100vh - 72px);
+
+    padding-top: 60px;
+    padding-left: 480px;
+
+    text-align: center;
+}
+
+.no-results {
+    width: 100%;
+    text-align: center;
+}

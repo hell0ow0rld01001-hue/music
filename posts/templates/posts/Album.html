@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Blue Music</title>
+
+   
+
+    <link rel="stylesheet" href="./css/Style.css">
+    <link rel="stylesheet" href="./css/Album.css">
+</head>
+
+<body>
+
+    <!--  NAVBAR  -->
+
+    <nav class="navbar">
+
+        <a href="Home.html" class="logo">
+            <img src="./img/_4giPF6VRdSI4jKeGgCLQA.jpg" alt="Blue Music">
+        </a>
+
+        <div class="search-box"
+             onclick="window.location.href='search.html'">
+
+            <span class="search-icon">⌕</span>
+
+            <input
+                type="text"
+                placeholder="What do you want to play?"
+                readonly
+            >
+
+        </div>
+
+        <div class="nav-right">
+
+            <a href="#">Premium</a>
+            <a href="#">Support</a>
+            <a href="#">Download</a>
+
+            <span class="divider"></span>
+
+            <a href="#">Sign up</a>
+
+            <button class="login-btn">
+                Log in
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <!--  LAYOUT  -->
+
+    <div class="album-layout">
+
+        <!-- SIDEBAR -->
+
+        <aside class="sidebar">
+
+            <div class="menu-section">
+
+                <a href="Home.html" class="menu-item">
+                    <span>⌂</span>
+                    <p>Home</p>
+                </a>
+
+                <a href="search.html" class="menu-item">
+                    <span>⌕</span>
+                    <p>Search</p>
+                </a>
+
+                <a href="#" class="menu-item">
+                    <span>▱</span>
+                    <p>Your Library</p>
+                </a>
+
+            </div>
+
+            <div class="sidebar-line"></div>
+
+            <div class="playlist-title">
+                <span>Your Music</span>
+                <button>+</button>
+            </div>
+
+            <div class="playlist-list">
+                <a href="#">Liked Songs</a>
+                <a href="#">Chill Mix</a>
+                <a href="#">My Playlist</a>
+                <a href="#">Night Drive</a>
+            </div>
+
+        </aside>
+
+
+        <!--  MAIN  -->
+
+        <main class="album-main">
+
+            <!-- HERO -->
+
+            <section class="album-hero">
+
+                <div class="hero-bg"></div>
+
+                <div class="hero-content">
+
+                    <div class="hero-cover">
+
+                        <img
+                            src="./img/stray kids.jpg"
+                            alt="This That"
+                        >
+
+                    </div>
+
+
+                    <div class="hero-info">
+
+                        <span class="hero-label">
+                            ALBUM
+                        </span>
+
+                        <h1>This & That</h1>
+
+                        <h2>Stray Kids</h2>
+
+                        <p class="hero-text">
+                            A collection of tracks from Stray Kids.
+                            Listen to the album and discover your
+                            favorite songs.
+                        </p>
+
+                        <div class="hero-meta">
+                            <span>2026</span>
+                            <span>•</span>
+                            <span>8 Songs</span>
+                            <span>•</span>
+                            <span>32 min</span>
+                        </div>
+
+
+                        <div class="hero-actions">
+
+                            <button
+                                class="hero-play"
+                                onclick="playSong(
+                                    './music/This that.mp3',
+                                    'This That',
+                                    'Stray Kids',
+                                    './img/stray kids.jpg'
+                                )">
+                                ▶ Play
+                            </button>
+
+                            <button class="hero-save">
+                                ♡
+                            </button>
+
+                            <button class="hero-more">
+                                ⋮
+                            </button>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- SONGS -->
+
+            <section class="album-track-section">
+
+                <div class="track-heading">
+
+                    <h2>Tracks</h2>
+
+                    <span>8 songs</span>
+
+                </div>
+
+
+                <div class="track-list">
+
+
+                    <div class="track"
+                         onclick="playSong(
+                            './music/This & That.mp3',
+                            'This & That',
+                            'Stray Kids',
+                            './img/stray kids.jpg'
+                         )">
+
+                        <span class="track-number">
+                            01
+                        </span>
+
+                        <div class="track-song">
+
+                            <img
+                                src="./img/stray kids.jpg"
+                                
+                            >
+
+                            <div>
+                                <h3>This & That</h3>
+                                <p>Stray Kids</p>
+                            </div>
+
+                        </div>
+
+                        <span class="track-duration">
+                            3:42
+                        </span>
+
+                    </div>
+
+
+                    <div class="track"
+                         onclick="playSong(
+                            './music/Run it.mp3',
+                            'Run it',
+                            'Stray Kids',
+                            './img/stray kids.jpg'
+                         )">
+
+                        <span class="track-number">
+                            02
+                        </span>
+
+                        <div class="track-song">
+
+                            <img
+                                src="./img/stray kids.jpg"
+                                
+                            >
+
+                            <div>
+                                <h3>Run it</h3>
+                                <p>Stray Kids</p>
+                            </div>
+
+                        </div>
+
+                        <span class="track-duration">
+                            3:28
+                        </span>
+
+                    </div>
+
+
+                    <div class="track"
+                         onclick="playSong(
+                            './music/After You.mp3',
+                            'After You',
+                            'Stray Kids',
+                            './img/stray kids.jpg'
+                         )">
+
+                        <span class="track-number">
+                            03
+                        </span>
+
+                        <div class="track-song">
+
+                            <img
+                                src="./img/stray kids.jpg"
+                                
+                            >
+
+                            <div>
+                                <h3>After you</h3>
+                                <p>Stray Kids</p>
+                            </div>
+
+                        </div>
+
+                        <span class="track-duration">
+                            3:55
+                        </span>
+
+                    </div>
+
+
+                    <div class="track"
+                         onclick="playSong(
+                            './music/FARMING.mp3',
+                            'FARMING',
+                            'Stray Kids',
+                            './img/stray kids.jpg'
+                         )">
+
+                        <span class="track-number">
+                            04
+                        </span>
+
+                        <div class="track-song">
+
+                            <img
+                                src="./img/stray kids.jpg"
+                               
+                            >
+
+                            <div>
+                                <h3>FARMING</h3>
+                                <p>Stray Kids</p>
+                            </div>
+
+                        </div>
+
+                        <span class="track-duration">
+                            4:01
+                        </span>
+
+                    </div>
+
+
+                      <div class="track"
+                         onclick="playSong(
+                            './music/Way Out.mp3',
+                            'Way Out',
+                            'Stray Kids',
+                            './img/stray kids.jpg'
+                         )">
+
+                        <span class="track-number">
+                            05
+                        </span>
+
+                        <div class="track-song">
+
+                            <img
+                                src="./img/stray kids.jpg"
+                              
+                            >
+
+                            <div>
+                                <h3>Way Out</h3>
+                                <p>Stray Kids</p>
+                            </div>
+
+                        </div>
+
+                        <span class="track-duration">
+                            2:05
+                        </span>
+
+                    </div>
+
+
+     <div class="track"
+                         onclick="playSong(
+                            './music/I Do.mp3',
+                            'I Do',
+                            'Stray Kids',
+                            './img/stray kids.jpg'
+                         )">
+
+                        <span class="track-number">
+                            06
+                        </span>
+
+                        <div class="track-song">
+
+                            <img
+                                src="./img/stray kids.jpg"
+                            
+                            >
+
+                            <div>
+                                <h3>I Do</h3>
+                                <p>Stray Kids</p>
+                            </div>
+
+                        </div>
+
+                        <span class="track-duration">
+                            1:30
+                        </span>
+
+                    </div>
+
+     <div class="track"
+                         onclick="playSong(
+                            './music/Back Then.mp3',
+                            'Back Then',
+                            'Stray Kids',
+                            './img/stray kids.jpg'
+                         )">
+
+                        <span class="track-number">
+                            07
+                        </span>
+
+                        <div class="track-song">
+
+                            <img
+                                src="./img/stray kids.jpg"
+                            
+                            >
+
+                            <div>
+                                <h3>Back Then</h3>
+                                <p>Stray Kids</p>
+                            </div>
+
+                        </div>
+
+                        <span class="track-duration">
+                            2:30
+                        </span>
+
+                    </div>
+
+                         <div class="track"
+                         onclick="playSong(
+                            './music/This & That - Festival Version.mp3',
+                            'This & That - Festival Version',
+                            'This & That - Festival Version',
+                            './img/stray kids.jpg'
+                         )">
+
+                        <span class="track-number">
+                            08
+                        </span>
+
+                        <div class="track-song">
+
+                            <img
+                                src="./img/stray kids.jpg"
+                                alt=""
+                            >
+
+                            <div>
+                                <h3>This & That - Festival Version</h3>
+                                <p>Stray Kids</p>
+                            </div>
+
+                        </div>
+
+                        <span class="track-duration">
+                            3:42
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- MORE FROM ARTIST -->
+
+            <section class="more-section">
+
+                <div class="track-heading">
+
+                    <h2>More from Stray Kids</h2>
+
+                    <a href="#">
+                        See all
+                    </a>
+
+                </div>
+
+
+                <div class="more-grid">
+
+                    <div class="more-card">
+
+                        <img
+                            src="./img/Karma Album.jpg"
+                            
+                        >
+
+                        <h3>Karma</h3>
+
+                        <p>2025</p>
+
+                    </div>
+
+
+                    <div class="more-card">
+
+                        <img
+                            src="./img/ATE Album.jpg"
+                            
+                        >
+
+                        <h3>ATE</h3>
+
+                        <p>2024</p>
+
+                    </div>
+
+
+                    <div class="more-card">
+
+                        <img
+                            src="./img/Hop Album.jpg"
+                            
+                        >
+
+                        <h3>Hop</h3>
+
+                        <p>2024</p>
+
+                    </div>
+
+
+                    <div class="more-card">
+
+                        <img
+                            src="./img/Do It Album.jpg"
+                            
+                        >
+
+                        <h3>Do It</h3>
+
+                        <p>2025</p>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <!-- MUSIC PLAYER -->
+
+    <div class="music-player" id="musicPlayer">
+
+        <div class="player-song">
+
+            <img
+                id="playerCover"
+                class="player-cover"
+                src=""
+                alt=""
+            >
+
+            <div class="player-info">
+
+                <h3 id="playerTitle">
+                    No song selected
+                </h3>
+
+                <p id="playerArtist">
+                    ---
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="player-center">
+
+            <div class="player-buttons">
+
+                <button
+                    id="prevBtn"
+                    class="player-btn">
+                    ⏮
+                </button>
+
+                <button
+                    id="playBtn"
+                    class="play-btn">
+                    ▶
+                </button>
+
+                <button
+                    id="nextBtn"
+                    class="player-btn">
+                    ⏭
+                </button>
+
+            </div>
+
+
+            <div class="progress-container">
+
+                <span id="currentTime">
+                    0:00
+                </span>
+
+                <input
+                    type="range"
+                    id="progressBar"
+                    min="0"
+                    max="100"
+                    value="0"
+                >
+
+                <span id="duration">
+                    0:00
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="player-right">
+
+            <span class="volume-icon">
+                🔊
+            </span>
+
+            <input
+                type="range"
+                id="volumeBar"
+                min="0"
+                max="1"
+                step="0.01"
+                value="0.7"
+            >
+
+            <button
+                id="closePlayer"
+                class="close-player">
+                ×
+            </button>
+
+        </div>
+
+    </div>
+
+    <audio id="audioPlayer"></audio>
+
+
+    <script src="./js/Script.js"></script>
+
+</body>
+</html>

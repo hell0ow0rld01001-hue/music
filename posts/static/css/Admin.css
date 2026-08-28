@@ -1,0 +1,663 @@
+/*  ADMIN PANEL */
+
+.admin-body {
+    min-height: 100vh;
+
+    margin: 0;
+
+    background: #06090d;
+
+    color: white;
+
+    font-family: Arial, sans-serif;
+}
+
+
+/*  SIDEBAR */
+
+.admin-sidebar {
+    position: fixed;
+
+    left: 0;
+    top: 0;
+
+    width: 245px;
+    height: 100vh;
+
+    padding: 24px 15px;
+
+    box-sizing: border-box;
+
+    background:
+        linear-gradient(
+            180deg,
+            #0a1017,
+            #070b10
+        );
+
+    border-right: 1px solid #182733;
+
+    display: flex;
+
+    flex-direction: column;
+
+    z-index: 1000;
+}
+
+
+/*  BRAND*/
+
+.admin-brand {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 5px 8px 28px;
+
+    border-bottom: 1px solid #17232d;
+}
+
+.admin-brand img {
+    width: 46px;
+    height: 46px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+
+    border: 1px solid #24506a;
+}
+
+.admin-brand h2 {
+    margin: 0 0 4px;
+
+    font-size: 16px;
+}
+
+.admin-brand span {
+    color: var(--blue);
+
+    font-size: 8px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+}
+
+
+/*   MENU */
+
+.admin-menu {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 5px;
+
+    margin-top: 25px;
+}
+
+.admin-menu-item {
+    position: relative;
+
+    height: 48px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 13px;
+
+    padding: 0 14px;
+
+    border-radius: 10px;
+
+    color: #81909e;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 600;
+
+    transition: 0.25s ease;
+}
+
+.admin-menu-item span {
+    width: 23px;
+
+    text-align: center;
+
+    font-size: 19px;
+}
+
+.admin-menu-item:hover {
+    background: #101923;
+
+    color: white;
+}
+
+.admin-menu-item.active {
+    background:
+        linear-gradient(
+            90deg,
+            rgba(25,167,255,.16),
+            rgba(25,167,255,.04)
+        );
+
+    color: var(--blue);
+}
+
+.admin-menu-item.active::before {
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+    top: 8px;
+
+    width: 3px;
+    height: 32px;
+
+    background: var(--blue);
+
+    border-radius: 5px;
+
+    box-shadow:
+        0 0 12px rgba(25,167,255,.7);
+}
+
+
+/* SIDEBAR BOTTOM */
+
+.admin-sidebar-bottom {
+    margin-top: auto;
+
+    padding-top: 20px;
+
+    border-top: 1px solid #17232d;
+}
+
+.back-site {
+    display: block;
+
+    padding: 12px 14px;
+
+    color: #71808c;
+
+    text-decoration: none;
+
+    font-size: 12px;
+
+    border-radius: 9px;
+
+    transition: 0.25s ease;
+}
+
+.back-site:hover {
+    background: #101923;
+
+    color: white;
+}
+
+
+/*  MAIN */
+
+.admin-main {
+    margin-left: 245px;
+
+    padding: 35px 40px 60px;
+}
+
+
+/*  TOPBAR */
+
+.admin-topbar {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 30px;
+}
+
+.dashboard-label {
+    color: var(--blue);
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 2px;
+}
+
+
+.admin-profile {
+    display: flex;
+
+    align-items: center;
+
+    gap: 11px;
+}
+
+.admin-avatar {
+    width: 42px;
+    height: 42px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background:
+        linear-gradient(
+            145deg,
+            #19a7ff,
+            #0c5c91
+        );
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 800;
+
+    box-shadow:
+        0 0 20px rgba(25,167,255,.15);
+}
+
+.admin-profile h3 {
+    margin: 0 0 3px;
+
+    font-size: 13px;
+}
+
+.admin-profile p {
+    margin: 0;
+
+    color: #74828e;
+
+    font-size: 10px;
+}
+
+
+/* STATS */
+
+.stats-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(4, 1fr);
+
+    gap: 17px;
+
+    margin-bottom: 22px;
+}
+
+.stat-card {
+    min-height: 120px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    padding: 18px;
+
+    box-sizing: border-box;
+
+    border-radius: 15px;
+
+    border: 1px solid #182936;
+
+    background:
+        linear-gradient(
+            145deg,
+            #0c141c,
+            #080e14
+        );
+
+    transition: 0.25s ease;
+}
+
+.stat-card:hover {
+    transform: translateY(-3px);
+
+    border-color:
+        rgba(25,167,255,.3);
+}
+
+.stat-icon {
+    width: 46px;
+    height: 46px;
+
+    border-radius: 12px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    background:
+        rgba(25,167,255,.09);
+
+    color: var(--blue);
+
+    font-size: 20px;
+}
+
+.stat-card p {
+    margin: 0 0 4px;
+
+    color: #788794;
+
+    font-size: 11px;
+}
+
+.stat-card h2 {
+    margin: 0 0 3px;
+
+    font-size: 25px;
+}
+
+
+
+
+/*  CONTENT GRID */
+
+.admin-content-grid {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 2fr)
+        minmax(280px, 1fr);
+
+    gap: 20px;
+}
+
+
+/*   PANELS */
+
+.admin-panel {
+    border: 1px solid #182936;
+
+    border-radius: 16px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #0b1219,
+            #080d13
+        );
+
+    padding: 20px;
+
+    min-width: 0;
+}
+
+.large-panel {
+    min-width: 0;
+}
+
+.panel-header {
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    margin-bottom: 20px;
+}
+
+.panel-header > div  {
+    color: var(--blue);
+
+    font-size: 9px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+}
+
+.panel-header h2 {
+    margin: 5px 0 0;
+
+    font-size: 18px;
+}
+
+.panel-header a {
+    color: #7d8b97;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    transition: 0.2s ease;
+}
+
+.panel-header a:hover {
+    color: var(--blue);
+}
+
+
+/*   SONG TABLE */
+
+.song-table {
+    width: 100%;
+}
+
+.table-head,
+.table-row {
+    display: grid;
+
+    grid-template-columns:
+        35px
+        minmax(170px, 2fr)
+        1fr
+        1fr
+        50px;
+
+    align-items: center;
+
+    gap: 10px;
+}
+
+.table-head {
+    padding: 0 10px 10px;
+
+    color: #5e6b76;
+
+    font-size: 9px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    border-bottom: 1px solid #17232d;
+}
+
+.table-row {
+    min-height: 65px;
+
+    padding: 6px 10px;
+
+    border-radius: 9px;
+
+    color: #a0adb8;
+
+    font-size: 11px;
+
+    transition: 0.2s ease;
+}
+
+.table-row:hover {
+    background: #0e1720;
+}
+
+.table-song {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    min-width: 0;
+}
+
+.table-song img {
+    width: 42px;
+    height: 42px;
+
+    object-fit: cover;
+
+    border-radius: 7px;
+
+    flex-shrink: 0;
+}
+
+.table-song strong {
+    color: white;
+
+    font-size: 12px;
+
+    white-space: nowrap;
+
+    overflow: hidden;
+
+    text-overflow: ellipsis;
+}
+
+
+/*   QUICK ACTIONS */
+
+.quick-actions {
+    display: grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap: 10px;
+}
+
+.quick-action {
+    min-height: 80px;
+
+    display: flex;
+
+    flex-direction: column;
+
+    align-items: flex-start;
+
+    justify-content: center;
+
+    gap: 8px;
+
+    padding: 14px;
+
+    border-radius: 11px;
+
+    background: #0d161e;
+
+    border: 1px solid #182936;
+
+    color: #a3b0ba;
+
+    text-decoration: none;
+
+    font-size: 11px;
+
+    font-weight: 600;
+
+    transition: 0.25s ease;
+}
+
+.quick-action span {
+    width: 25px;
+    height: 25px;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 7px;
+
+    background: rgba(25,167,255,.09);
+
+    color: var(--blue);
+
+    font-size: 18px;
+}
+
+.quick-action:hover {
+    background: #111d27;
+
+    color: white;
+
+    border-color:
+        rgba(25,167,255,.3);
+
+    transform: translateY(-2px);
+}
+
+
+/*  ARTISTS */
+
+.admin-artists {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 7px;
+}
+
+.admin-artist {
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 9px;
+
+    border-radius: 10px;
+
+    transition: 0.2s ease;
+}
+
+.admin-artist:hover {
+    background: #0e1720;
+}
+
+.admin-artist img {
+    width: 45px;
+    height: 45px;
+
+    border-radius: 50%;
+
+    object-fit: cover;
+}
+
+.admin-artist h3 {
+    margin: 0 0 4px;
+
+    font-size: 12px;
+
+    color: white;
+}
+
+.admin-artist p {
+    margin: 0;
+
+    color: #6f7d89;
+
+    font-size: 10px;
+}
+
+

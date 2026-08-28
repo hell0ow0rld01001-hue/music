@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Blue Music</title>
+
+    <link rel="stylesheet" href="./css/Style.css">
+    <link rel="stylesheet" href="./css/search.css">
+</head>
+
+<body>
+
+    <!-- =========================
+         NAVBAR
+    ========================= -->
+
+    <nav class="navbar">
+
+        <a href="Home.html" class="logo">
+            <img src="./img/_4giPF6VRdSI4jKeGgCLQA.jpg" alt="Blue Music">
+        </a>
+
+        <div class="search-page-box">
+
+            <span>⌕</span>
+
+            <input
+                type="text"
+                id="pageSearchInput"
+                placeholder="What do you want to play?"
+                autofocus
+            >
+
+        </div>
+
+        <div class="nav-right">
+
+            <a href="#">Premium</a>
+            <a href="#">Support</a>
+            <a href="#">Download</a>
+
+            <span class="divider"></span>
+
+            <a href="#">Sign up</a>
+
+            <button class="login-btn">
+                Log in
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- =========================
+         APP
+    ========================= -->
+
+    <div class="app-layout">
+
+        <!-- =========================
+             SIDEBAR
+        ========================= -->
+
+        <aside class="sidebar">
+
+            <div class="menu-section">
+
+                <a href="Home.html" class="menu-item">
+                    <span>⌂</span>
+                    <p>Home</p>
+                </a>
+
+                <a href="search.html" class="menu-item active">
+                    <span>⌕</span>
+                    <p>Search</p>
+                </a>
+
+                <a href="#" class="menu-item">
+                    <span>▱</span>
+                    <p>Your Library</p>
+                </a>
+
+            </div>
+
+
+            <div class="sidebar-line"></div>
+
+
+            <div class="playlist-title">
+
+                <span>Your Music</span>
+
+                <button>+</button>
+
+            </div>
+
+
+            <div class="playlist-list">
+
+                <a href="#">Liked Songs</a>
+                <a href="#">Chill Mix</a>
+                <a href="#">My Playlist</a>
+                <a href="#">Night Drive</a>
+
+            </div>
+
+        </aside>
+
+
+        <!-- =========================
+             SEARCH CONTENT
+        ========================= -->
+
+        <main class="search-main">
+
+            <section id="resultsSection">
+
+                <div
+                    class="search-results-grid"
+                    id="searchGrid">
+                </div>
+
+
+                <div
+                    class="no-results"
+                    id="noResults">
+
+                    <div>⌕</div>
+
+                    <h2>
+                        Search for a song
+                    </h2>
+
+                    <p>
+                        Try a song name, artist or album.
+                    </p>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+
+    <script src="./js/search.js"></script>
+
+</body>
+</html>
